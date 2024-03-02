@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Nostalgian" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Nostalgian" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Nostalgian" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`sdl2-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl2-config --libs`" />
+		</Linker>
+		<Unit filename="Base/GenericSDLUIElement.h" />
+		<Unit filename="Base/GenericUIElement.cpp" />
+		<Unit filename="Base/GenericUIElement.h" />
+		<Unit filename="Generated/InitError.cpp" />
+		<Unit filename="Generated/InitError.h" />
+		<Unit filename="Generated/SDL.cpp" />
+		<Unit filename="Generated/SDL.h" />
+		<Unit filename="Mapping/Mapping.cpp" />
+		<Unit filename="Mapping/SDLMapping.h" />
+		<Unit filename="Reader/IOSection.h" />
+		<Unit filename="Structs/Data_Game.h" />
+		<Unit filename="Structs/Data_Message.h" />
+		<Unit filename="Structs/Set_Color.h" />
+		<Unit filename="Structs/Set_Properties.h" />
+		<Unit filename="Structs/Vec3.h" />
+		<Unit filename="Superfluous/TList.h" />
+		<Unit filename="Superfluous/structs/TRect.h" />
+		<Unit filename="Systems/Startup.cpp" />
+		<Unit filename="Systems/Startup.h" />
+		<Unit filename="Systems/StartupGetSet.cpp" />
+		<Unit filename="Systems/StartupInterpret.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
