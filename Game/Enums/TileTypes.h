@@ -3,9 +3,9 @@
 
 typedef enum{
     Air,
-    Generic,
+    Floor,
     Water,
-    Stone,
+    Hard,
     Soft,
     Brittle,
 } TileType;

@@ -9,8 +9,9 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/Nostalgian" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -29,31 +30,56 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="`sdl2-config --cflags`" />
 			<Add option="-Wall" />
+			<Add option="`sdl2-config --cflags`" />
 		</Compiler>
 		<Linker>
-			<Add option="`sdl2-config --libs`" />
+			<Add option="`sdl2-config --libs` -lSDL2_ttf" />
 		</Linker>
 		<Unit filename="Base/GenericSDLUIElement.h" />
 		<Unit filename="Base/GenericUIElement.cpp" />
 		<Unit filename="Base/GenericUIElement.h" />
+		<Unit filename="Game/Data/Item.h" />
+		<Unit filename="Game/Elements/Loot.h" />
+		<Unit filename="Game/Elements/NPC.cpp" />
+		<Unit filename="Game/Elements/NPC.h" />
+		<Unit filename="Game/Elements/Player.cpp" />
+		<Unit filename="Game/Elements/Player.h" />
+		<Unit filename="Game/Elements/Warp.h" />
+		<Unit filename="Game/Entity.cpp" />
 		<Unit filename="Game/Entity.h" />
 		<Unit filename="Game/Enums/TileDecalType.h" />
 		<Unit filename="Game/Enums/TileTypes.h" />
+		<Unit filename="Game/Factories/GenericEntityFactory.h" />
+		<Unit filename="Game/Flags.h" />
+		<Unit filename="Game/GRandom.h" />
 		<Unit filename="Game/Generation/TileGen" />
 		<Unit filename="Game/Generation/TileGen.cpp" />
 		<Unit filename="Game/Generation/TileGen.h" />
+		<Unit filename="Game/RenderSDL.cpp" />
+		<Unit filename="Game/RenderSDL.h" />
 		<Unit filename="Game/Section.cpp" />
 		<Unit filename="Game/Section.h" />
+		<Unit filename="Game/SectionEvents.cpp" />
 		<Unit filename="Game/Structs/Action.h" />
+		<Unit filename="Game/Structs/EntityProperties.h" />
 		<Unit filename="Game/Structs/Event.h" />
+		<Unit filename="Game/Structs/Input.h" />
 		<Unit filename="Game/Structs/PhysicalProperties.h" />
+		<Unit filename="Game/Structs/RenderHelpers.h" />
+		<Unit filename="Game/Structs/StartInfo.h" />
+		<Unit filename="Game/Structs/Stats.cpp" />
+		<Unit filename="Game/Structs/Stats.h" />
 		<Unit filename="Game/Structs/TileProperties.cpp" />
 		<Unit filename="Game/Structs/TileProperties.h" />
+		<Unit filename="Game/Structs/WorldData.h" />
 		<Unit filename="Game/Tile.cpp" />
 		<Unit filename="Game/Tile.h" />
+		<Unit filename="Game/UI/SDLUI.h" />
+		<Unit filename="Game/World.cpp" />
 		<Unit filename="Game/World.h" />
+		<Unit filename="Game/Worlds/Initial.cpp" />
+		<Unit filename="Game/Worlds/Initial.h" />
 		<Unit filename="Game/Worlds/Lands.cpp" />
 		<Unit filename="Game/Worlds/Lands.h" />
 		<Unit filename="Game/Worlds/Test.cpp" />
@@ -67,18 +93,26 @@
 		<Unit filename="Generated/SDLMenu.h" />
 		<Unit filename="Generated/SDLWorld.cpp" />
 		<Unit filename="Generated/SDLWorld.h" />
+		<Unit filename="Helpers/TMath.cpp" />
+		<Unit filename="Helpers/TMath.h" />
 		<Unit filename="Mapping/Mapping.cpp" />
 		<Unit filename="Mapping/SDLMapping.h" />
 		<Unit filename="Reader/IOSection.h" />
 		<Unit filename="Structs/Data_Game.h" />
+		<Unit filename="Structs/Data_Log.h" />
 		<Unit filename="Structs/Data_Message.h" />
 		<Unit filename="Structs/SDL_Block.h" />
+		<Unit filename="Structs/SDL_Text.cpp" />
+		<Unit filename="Structs/SDL_Text.h" />
+		<Unit filename="Structs/SDL_Visual.cpp" />
 		<Unit filename="Structs/SDL_Visual.h" />
 		<Unit filename="Structs/Set_Color.h" />
+		<Unit filename="Structs/Set_Properties.cpp" />
 		<Unit filename="Structs/Set_Properties.h" />
 		<Unit filename="Structs/Vec3.cpp" />
 		<Unit filename="Structs/Vec3.h" />
 		<Unit filename="Superfluous/TList.h" />
+		<Unit filename="Superfluous/structs/TRect.cpp" />
 		<Unit filename="Superfluous/structs/TRect.h" />
 		<Unit filename="Systems/Startup.cpp" />
 		<Unit filename="Systems/Startup.h" />

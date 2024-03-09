@@ -12,6 +12,9 @@
 class SDLMapping{
     public:
     SDL_Rect ToSDLRect(TRect rect);
+    SDL_Rect * ToSDLRectPtr(TRect rect);
+    SDL_Rect ToSDLRect(Set_Properties properties);
+    SDL_Rect * ToSDLRectPtr(Set_Properties properties);
 };
 
 #endif // SDLMAPPING_H_INCLUDED

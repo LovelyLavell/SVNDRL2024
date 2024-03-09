@@ -6,6 +6,9 @@ struct Set_Properties{
     Vec3 Size;
     Vec3 Location;
     Vec3 Rotation;
+    Set_Properties();
+    Set_Properties(Vec3 Size, Vec3 Location);
+    Set_Properties(Vec3 Size, Vec3 Location, Vec3 Rotation);
 };
 
 #endif // PROPERTIES_H_INCLUDED
