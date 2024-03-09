@@ -41,6 +41,8 @@ SDLFlag::SDLFlag( Data_Game gameData, Uint32 flags )
     if ( SDL_CreateWindowAndRenderer( gameData.WindowWidth, gameData.WindowHeight, SDL_WINDOW_SHOWN,
                                       &m_window, &m_renderer ) != 0 )
         throw InitError();
+
+    SDL_SetWindowTitle(m_window, gameData.title.c_str());
 }
 
 SDLFlag::~SDLFlag()
@@ -66,6 +68,7 @@ void SDLFlag::draw()
         SDL_Rect bar = SDLMapping().ToSDLRect(bars[i].rect);
         SDL_RenderFillRect( m_renderer, &bar);
         SDL_RenderPresent( m_renderer );
-        SDL_Delay( 500 );
+        SDL_Delay( 250 );
     }
+    code = 1;
 }

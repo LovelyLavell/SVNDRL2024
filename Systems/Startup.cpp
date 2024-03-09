@@ -1,7 +1,11 @@
 #include "Startup.h"
 
 Startup::Startup(int argc, char * argv[]){
-    GameData.title = "Bad vacation in In Essence";
-    GameData.WindowWidth = 1280;
-    GameData.WindowHeight = 720;
+    GameData.title = "In Essence: Bad Time";
+    GameData.WindowWidth = 800;
+    GameData.WindowHeight = 600;
+
+    //Scaling required for the graphis of the game
+    GameData.ScaleWidth = GameData.WindowWidth / GameData.DefaultWidth;
+    GameData.ScaleHeight = GameData.WindowHeight / GameData.DefaultHeight;
 }

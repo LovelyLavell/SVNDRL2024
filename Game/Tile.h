@@ -14,6 +14,9 @@ class Tile{
     //to add extra data to tiles but I don't see that.
     Vec3 GetLocation();
     TileProperties GetProperties();
+    void Change(TileType type);
+    void Change(Vec3 color);
+    void Change(TileType type, Vec3 color);
 };
 
 #endif // TILE_H_INCLUDED

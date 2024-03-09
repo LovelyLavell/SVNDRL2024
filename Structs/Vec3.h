@@ -8,7 +8,7 @@ struct Vec3
     float c;
     float w;
     Vec3();
-    Vec3(float a, float b, float c, float w = 0);
+    Vec3(float a, float b, float c = 0, float w = 0);
 };
 
 #endif // VEC3_H_INCLUDED
